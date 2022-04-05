@@ -1,0 +1,2348 @@
+/* YAZI STİLLERİ */
+
+.sfprodisplay300 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+    font-weight: 300;
+}
+
+.sfprodisplay400 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+    font-weight: 400;
+}
+
+.sfprofisplay500 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+    font-weight: 500;
+}
+
+.sfprodisplay700 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+    font-weight: 700;
+}
+
+.poppins300 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+}
+
+.poppins400 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.poppins500 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.poppins700 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.roboto300 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+}
+
+.roboto500 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.roboto400 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.roboto700 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* APP BAR KODU*/
+
+.ust {
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, rgba(245, 245, 245, 0.7), rgba(255, 255, 255, 1));
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.ust h3 {
+    line-height: 80px;
+    font-size: 20px;
+    margin-left: 50px;
+    position: relative;
+    right: 15vw;
+
+}
+
+.ust div {
+    position: relative;
+    left: 10vw;
+    margin-right: 40px;
+}
+
+
+
+.ust div img{
+    margin: 31px 0 0 0;
+    position: relative;
+}
+
+.ust .hr {
+    position: absolute;
+    right: 7px;
+    top: 10px;
+}
+
+.ust h3 span {
+    color: #A34CF9;
+}
+
+.menu{
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background: linear-gradient(to top, rgba(240,240,240,1), rgba(255,255,255,1));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: absolute;
+    margin-top: 80px;
+    transition: visibility 0s, opacity 0.3s linear;
+}
+.menu a{
+    text-decoration: none;
+    color: #383434;
+    height: calc((100vh - 80px)/4);
+    width: 80vw;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.menu a:hover{
+    font-size: 22px;
+}
+
+
+.menu a:nth-child(4){
+    border: none;
+}
+
+
+
+
+
+
+.elips .elipssol, .elipsorta, .elipssag{
+    width: 40px;
+    height: 51px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* CSS KODLARIMIZ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* İLK SAYFA KODLARI */
+
+.home-m {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
+.home-m .orta{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 520px;
+    height: 520px;
+    width: 100vw;
+    margin-top: 10px;
+}
+    .home-m .img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 255px;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .home-m .img .imgrelative{
+        width: 100vw;
+        max-width: 280px;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+    .home-m .img .imgrelative img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .home-m .img .imgabsolute{
+        position: absolute;
+        top: 246px;
+        z-index: 0;
+    }
+    
+    .home-m .yazi{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 130px;
+        margin-top: 60px;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+    
+    .home-m .yazi h3{
+        font-size: 18px;
+        color: #943FF3;   
+        letter-spacing: 3px;
+    }
+    .home-m .yazi p{
+        text-align: center;
+        font-size: 18px;
+        color: #333333;
+        margin-top: 10px;
+    }
+    
+    .home-m form{
+        width: 100vw;
+/*        height: calc(100vh - 525px);*/
+        height: 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: calc(((100vh - 800px)/100) * 5);
+    }
+
+    .home-m form button{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFFFFF;
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    border-radius: 0.8rem;
+    border: 0;
+    width: 65vw;
+    max-width: 400px;
+    height: 50px;
+    }
+
+
+/* İKİNCİ SAYFA KODLARI */
+
+        /* MOBİLE */
+
+
+.homestart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 25px;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-top: none;
+}
+
+.homestart .baslik{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    height: 10vh;
+    margin-top: calc(10px + ((100vh - 600px)/100) * 10);
+    margin-bottom: calc(10px + ((100vh - 600px)/100) * 10);
+
+}
+
+.homestart .baslik h3{
+    font-size: 25px;
+    color: #333333;
+}
+.homestart .baslik p{
+    font-size: 12px;
+    color: #999999;
+}
+
+.homestart .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 75vh;
+    max-height: 390px;
+}
+
+.homestart .img .satır {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+
+}
+
+.homestart .img .satır div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 130px;
+    height: 130px;
+}
+
+.homestart .img .satır div span {
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.homestart .img .satır div div {
+    width: 100px;
+    height: 50px;
+}
+
+.homestart .img .satır div div img {
+    height: 100%;
+    width: auto;
+    max-width: 80px;
+
+}
+
+.homestart .img .satır div #lanet img {
+    height: 40px;
+    width: auto;
+}
+
+.homestart form {
+    display: flex;
+    flex-direction:column;
+    width: 100vw;
+    height: calc((100vh - 470px)/3);
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.homestart form button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    border-radius: 0.8rem;
+    border: 0;
+    height: 50px;
+    width: 65%;
+    max-width: 400px;
+}
+
+        /* DESKTOP */
+
+.home {
+        background-image: url(../d-img/homeback.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        border: 1px solid lightgray;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+.home .topbar {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+.home .topbar h3 {
+        margin: 2.5vh 0 0 7vw;
+        font-size: 20px;
+        color: white;
+    }
+
+.home .topbar h3 span {
+        font-size: 22px;
+        color: #4A0A8E;
+    }
+
+.home .topbar ul {
+        margin: 2.5vh 7vw 0 0;
+        text-decoration: none;
+    }
+
+.home .topbar li::marker {
+        content: none;
+    }
+
+.home .topbar li a {
+        text-decoration: none;
+        font-size: 15px;
+        color: #C4C4C4;
+        padding-right: 20px;
+        transition: 0.5s;
+        font-family: 'Poppins';
+        font-weight: 500;
+    }
+    
+.home .topbar li a:hover{
+        font-size:1.1rem;
+        color: white;
+    }
+    
+
+.home .orta {
+        display: flex;
+        justify-content: space-evenly;
+        height: 50vh;
+
+    }
+
+.home .orta .yazi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20vw;
+        align-items: center;
+    }
+
+.home .orta .yazi h4 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        padding-bottom: 10px;
+        color: #4A0A8E;
+    }
+
+.home .orta .yazi p {
+        letter-spacing: 1px;
+        line-height: 130%;
+    }
+
+.home .orta .yazi p::first-letter {
+        padding-left: 5px;
+        font-size: 20px;
+        
+    }
+    
+.home .orta .img img{
+        height: 100%;
+        width: 100%;
+    }
+
+.home .alt {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-top: 30px;
+        height: 20vh;
+        align-items: center;
+    }
+    
+.home .alt .vertical {
+        height: 70%;
+        border-right: 1px solid #D6D6D6;
+    }
+
+.home .alt .img {
+        display: flex;
+        flex-direction: column;
+        width: 125px;
+        height: 180px;
+        justify-content: center;
+        align-items: center;
+    }
+
+.home .alt .img div{
+        width: auto;
+        height: 70px;
+    }
+
+.home .alt .img img{
+        width: auto;
+        height: 100%;
+    }
+
+.home .alt .img span{
+        display: inline-block;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    
+.home form {
+        text-align: center;
+        
+        
+    }
+
+.home button {
+        width: 30%;
+        height: 50px;
+        margin-top: 40px;
+        background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+        border-radius: 10px;
+        border: none;
+        color: white;
+        transition: 0.5s;
+    }
+    
+
+/* UCUNCU SAYFA KODLARI */
+
+        /* MOBİLE */
+
+.plan .elips {
+    display: flex;
+    height: 15vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.plan .elips p {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: white;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.plan .elips .elipssol p {
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    text-align: center;
+}
+
+.plan .elips .elipsorta p {
+    color: #767676;
+    background: #C4C4C4;
+}
+
+.plan .elips .elipssag p {
+    color: #767676;
+    background: #C4C4C4;
+}
+
+.plan .elips span {
+    font-size: 13px;
+    margin-top: 5px;
+    display: inline-block;
+
+}
+
+.plan .elips .elipssol span {
+    color: #8936F0;
+}
+
+.plan .elips .elipsorta span {
+    color: #333333;
+}
+
+.plan .elips .elipssag span {
+    color: #333333;
+}
+
+.plan .elips .cizgi-1,
+.plan .elips .cizgi-2 {
+    position: relative;
+    bottom: 10px;
+    margin: 0 10px 0 10px;
+    width: calc((80vw - 200px)/2);
+}
+
+.plan .elips .cizgi-1 {
+    border-top: 1px solid #D6D6D6;
+}
+
+.plan .elips .cizgi-2 {
+    border-top: 1px solid #D6D6D6;
+}
+
+/* ORTA ALAN KODLARIMIZ */
+
+
+.plan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+        border: 1px solid lightgray;
+        border-radius: 25px;
+        border-top: none;
+    }
+
+.plan .orta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85vw;
+    max-width: 500px;
+    min-width: 230px;
+    height: 310px;
+    position: relative;
+    margin-top: calc(20px + ((100vh - 600px)/100) * 10);
+}
+
+.plan .orta .baslik h3 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.plan .orta div:nth-child(2) {
+/*    margin-top: calc(20px + (((100vh - 600px)/100) * 20));*/
+    margin-top: 10px;
+
+}
+
+.plan .orta div:nth-child(3) {
+    margin-bottom: 10px;
+}
+
+.plan .orta .simge {
+    width: 80%;
+    align-self: center;
+}
+
+.plan .orta .simge:nth-child(3) {
+    margin-bottom: 20px;
+}
+
+.plan .orta .simge img {
+    position: relative;
+    bottom: 1px;
+}
+
+.plan .orta .simge span {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.plan .orta .option {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #7929EB;
+    margin: 0 0 10px 0;
+    height: 70px;
+    transition: 0.5s;
+}
+
+.plan .orta .option1 {
+    margin-bottom: 20px;
+}
+
+.plan .orta:nth-child() {
+    margin-bottom: 30px;
+}
+
+.plan .orta .option .yazi,
+.p {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+}
+
+.plan .orta .option .yazi {
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.plan .orta .option .yazi h3{
+    font-size: 26px;
+}
+.plan .orta .option .yazi h4{
+    font-size: 18px;
+}
+.plan .orta .option .p {
+    margin-bottom: 10px;
+    line-height: 25px;
+    font-size: 15px;
+    color: #000000;
+}
+
+.plan .orta .option img {
+    position: absolute;
+    align-self: center;
+}
+
+.plan form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc((85vh - 410px)/3);
+}
+
+.plan form button {
+    width: 65%;
+    height: 50px;
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    max-width: 400px;
+    transition: 0.5s;
+    font-size: 16px;
+}
+
+        /* DESKTOP */
+
+.choose {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            border: 1px solid lightgray;
+            border-radius: 25px;
+        }
+
+/* UST ALAN KODLARIMIZ */
+
+.choose .ust-d {
+            display: flex;
+            height: 25vh;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+.choose .ust-d p {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            color: white;
+            line-height: 40px;
+            font-size: 18px;
+        }
+
+.choose .ust-d .ustsol p {
+            background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+        }
+
+.choose .ust-d .ustorta p {
+            color: #767676;
+            background: #C4C4C4;
+        }
+
+.choose .ust-d .ustsag p {
+            color: #767676;
+            background: #C4C4C4;
+        }
+
+.choose .ust-d span {
+            font-size: 13px;
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+.choose .ust-d .ustsol span {
+            color: #8936F0;
+        }
+
+.choose .ust-d .ustorta span {
+            color: #333333;
+        }
+
+.choose .ust-d .ustsag span {
+            color: #333333;
+        }
+
+.choose .ust-d .cizgi-1,
+.cizgi-2 {
+            position: relative;
+            bottom: 10px;
+            margin: 0 15px 0 15px;
+            width: calc((80vw - 200px)/2);
+        }
+
+.choose .ust-d .cizgi-1 {
+            border-top: 1px solid #D6D6D6;
+        }
+
+.choose .ust-d .cizgi-2 {
+            border-top: 1px solid #D6D6D6;
+        }
+
+/* ORTA ALAN KODLARIMIZ */
+
+.choose .orta {
+            display: flex;
+            flex-direction: column;
+            width: 40vw;
+            max-width: 700px;
+            min-width: 500px;
+            justify-content: center;
+            height: 60vh;
+            max-height: 500px;
+        }
+
+.choose .orta .baslik h3 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            line-height: 120%;
+            text-align: center;
+        }
+
+.choose .orta div:nth-child(2){
+            margin-top: 20px;
+        }
+
+.choose .orta div:nth-child(3){
+            margin-bottom: 20px;
+        }
+
+.choose .orta .simge img{
+            position: relative;
+            bottom: 3px;
+        }
+
+.choose .orta .simge span {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+
+.choose .orta button{
+    background-color: white;
+    border: none;
+}
+
+
+.choose .orta .option {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #7929EB;
+            margin: 5px 0;
+            height: 80px;
+            transition: 0.5s;
+        }
+
+  
+        
+.choose .orta .option .yazi,
+.p {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 15px 0 15px;
+        }
+
+.choose .orta .option .yazi{
+    line-height: 25px;
+    margin-top: 15px;
+        }
+.choose .orta .option .yazi h3{
+    font-size: 27px;
+}
+.choose .orta .option .yazi h4{
+    font-size: 21px;
+}
+
+.choose .orta .option .p{
+            font-size: 17px;
+            margin-bottom: 15px;
+            line-height: 25px;
+        }
+
+.choose .orta .option img {
+            position: absolute;
+            align-self: center;
+        }
+        
+.choose form{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+.choose form button{
+        width: 30%;
+        height: 50px;
+        background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+        border-radius: 10px;
+        border: none;
+        color: white;
+        max-width: 500px;
+        margin-top: 30px;
+        transition: 0.5s;
+        font-size: 20px;
+        }
+
+
+
+/* DORDUNCU SAYFA KODLARI*/
+
+    /* MOBİLE */
+.payment{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+}
+
+.payment .elips {
+    display: flex;
+    height: 15vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+/*    margin-top: calc(10px + ((100vh - 700px)/100) * 5);*/
+    margin-top: 20px;
+}
+
+.payment .elips p {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: white;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.payment .elips .elipssol p {
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+}
+
+.payment .elips .elipsorta p {
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+}
+
+.payment .elips .elipssag p {
+    color: #767676;
+    background: #C4C4C4;
+}
+
+.payment .elips span {
+    font-size: 13px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.payment .elips .elipssol span {
+    color: #8936F0;
+}
+
+.payment .elips .elipsorta span {
+    color: #8936F0;
+}
+
+.payment .elips .elipssag span {
+    color: #333333;
+}
+
+.payment .elips .cizgi-1,
+.payment .elips .cizgi-2 {
+    position: relative;
+    bottom: 10px;
+    margin: 0 10px 0 10px;
+    width: calc((80vw - 200px)/2);
+    min-width: 40px;
+    max-width: 250px;
+}
+
+.payment .elips .cizgi-1 {
+    border-top: 1px solid #8231ED;
+}
+
+.payment .elips .cizgi-2 {
+    border-top: 1px solid #D6D6D6;
+}
+
+/* ORTA ALAN KODLARIMIZ */
+
+.payment .orta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(65vh - 100px);
+    min-height: 410px;
+
+}
+
+.payment .orta .ortaust {
+    width: 80%;
+    text-align: left;
+    align-self: center;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+.payment .orta .ortaust h3 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 120%;
+}
+
+.payment .orta .ortaust h3 span {
+    font-size: 25px;
+}
+
+.payment .orta .secure img {
+    position: relative;
+    top: 3px;
+}
+
+.payment .orta .secure span {
+    padding-left: 3px;
+    font-size: 12px;
+    color: #908E97;
+}
+
+.payment form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.payment .orta form .input {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-start;
+    max-width: 400px;
+    min-width: 200px;
+
+}
+
+.payment .orta .input input:nth-child(1) {
+    /*margin-top: calc(35px + (((100vh - 700px)/100) * 30));*/
+    margin-top: 10px;
+}
+
+.payment .orta form .input input {
+    max-width: 400px;
+    min-width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #4D4D4D;
+    box-sizing: border-box;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.payment .orta .input input:nth-child(4) {
+    margin-bottom: 0;
+}
+
+
+.payment .orta form .change {
+    position: relative;
+    height: 70px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #A44DF9;
+    box-sizing: border-box;
+    margin: 10px 0 0 0;
+}
+
+.payment .orta .change div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.payment .orta .change h3 {
+    display: inline-block;
+    font-size: 24px;
+    letter-spacing: 0;
+    color: #000;
+
+}
+
+.payment .orta .change p {
+    display: inline-block;
+    font-size: 16px;
+    color: #212121;
+}
+
+.payment .orta .change a {
+    margin-right: 15px;
+    line-height: 64px;
+    font-size: 16px;
+    color: #655959;
+}
+
+.payment .orta form .input span {
+    padding-left: 10px;
+    font-size: 12px;
+    color: black;
+}
+
+.payment .orta form .check {
+    display: flex;
+    text-align: left;
+    max-width: 400px;
+    min-width: 250px;
+    width: 80%;
+    margin: 5px 0 0 0;
+}
+
+.payment .orta form .check input {
+    position: relative;
+    top: 5px;
+}
+
+.payment .orta form .check {
+    margin-left: 3px;
+    margin-top: 2px;
+}
+
+.payment .orta form .check span {
+    font-size: 13px;
+    padding-left: 10px;
+    margin-top: 2px;
+    color: #5E5E5E;
+}
+
+.payment .orta form button {
+    font-family: 'poppins';
+    font-size: 15px;
+    font-weight: 500;
+    width: 65%;
+    height: 50px;
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    margin-top: calc(15px + (((100vh - 700px)/100) * 5));
+    max-width: 400px;
+    min-width: 200px;
+}
+
+.payment .orta form button span {
+    margin-left: 20px;
+}
+
+
+        /* DESKTOP */
+
+
+.payment-d {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+            border: 1px solid lightgray;
+            border-radius: 25px;
+            width: 100vw;
+            height: 100vh;
+        }
+
+.payment-d .ust-d {
+            display: flex;
+            height: 20vh;
+            text-align: center;
+            align-items: center;
+        }
+
+.payment-d .ust-d p {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            color: white;
+            line-height: 40px;
+            font-size: 18px;
+        }
+
+.payment-d .ust-d .ustsol p {
+            background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+        }
+
+.payment-d .ust-d .ustorta p {
+            background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+        }
+
+.payment-d .ust-d .ustsag p {
+            color: #767676;
+            background: #C4C4C4;
+        }
+
+.payment-d .ust-d span {
+            font-size: 13px;
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+.payment-d .ust-d .ustsol span {
+            color: #8936F0;
+        }
+
+.payment-d .ust-d .ustorta span {
+            color: #8936F0;
+        }
+
+.payment-d .ust-d .ustsag span {
+            color: #333;
+        }
+
+.payment-d .ust-d .cizgi-1,
+.cizgi-2 {
+            position: relative;
+            bottom: 10px;
+            margin: 0 15px 0 15px;
+            width: calc((80vw - 200px)/2);
+        }
+
+.payment-d .ust-d .cizgi-1 {
+            border-top: 1px solid #8231ED;
+        }
+
+.payment-d .ust-d .cizgi-2 {
+            border-top: 1px solid #D6D6D6;
+        }
+
+
+/* ORTA ALAN KODLARIMIZ */
+
+
+.payment-d .orta {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 74vh;
+            width: 100%;     
+        }
+
+.payment-d .orta h3 {
+            font-size: 50px;
+            letter-spacing: 1px;
+            line-height: 120%;
+        }
+
+.payment-d .orta .secure img {
+            position: relative;
+            top: 3px;
+        }
+
+.payment-d .orta .secure span {
+            padding-left: 3px;
+            font-size: 12px;
+            color: #908E97;
+        }
+
+.payment-d form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+.payment-d form .input {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+
+.payment-d .orta .input input:nth-child(1){
+            margin-top: 20px;
+        }
+
+.payment-d .orta .input input {
+            max-width: 700px;
+            min-width: 400px;
+            height: 50px;
+            border-radius: 10px;
+            border: 1px solid #4D4D4D;
+            box-sizing: border-box;
+            padding-left: 15px;
+            margin-bottom: 10px;
+            width: 40%;
+        }
+
+.payment-d .orta form .check {
+            display: flex;
+            text-align: left;
+            max-width: 700px;
+            min-width: 400px;
+            width: 40%;
+            margin: 10px 0 0 0;
+        }
+        
+.payment-d .orta form .check input{
+            position: relative;
+            top: 5px;
+        } 
+
+.payment-d .orta form .check span {
+            font-size: 13px;
+            padding-left: 15px;
+        }
+
+.payment-d .orta form button {
+            width: 30%;
+            height: 50px;
+            background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+            border-radius: 10px;
+            border: none;
+            color: white;
+            margin-top: 40px;
+            max-width: 600px;
+            min-width: 400px;
+        }
+        
+.payment-d .orta form button span{
+            padding-left: 10px;
+        }
+
+
+/* BESINCI SAYFA KODLARI*/
+
+        /* MOBİLE */
+
+.account {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    border-top: none;
+
+}
+
+.account .orta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/*    height: calc(85vh - 80px);*/
+    height: calc(80vh - 80px);
+}
+
+.account .orta .okey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 20px;
+}
+
+.account .orta .okey div {
+        width: 70px;
+        height: 70px;
+        background-color: #A34CF9;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+.account .orta .okey div img{
+    position: relative;
+    top: 17px;
+}
+
+.account .orta .okey h3{
+    font-size: 20px;
+}
+
+.account .orta h3 {
+    font-size: 40px;
+    letter-spacing: .2px;
+    margin-bottom: 10px;
+}
+
+.account .orta p {
+    line-height: 130%;
+    font-size: 18px;
+    color: #333333;
+    margin: 20px;
+
+}
+
+.account form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+/*    height: 15vh;*/
+    height: 20vh;
+    
+}
+
+.account form button {
+    font-family: 'poppins';
+    font-size: 16px;
+    font-weight: 500;
+    width: 65%;
+    height: 50px;
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+
+
+        /* DESKTOP */
+
+.account-d{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-sizing: border-box;
+            border: 1px solid lightgray;
+            border-radius: 25px;
+            
+        }
+
+.account-d .okey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 20px;
+}
+
+.account-d .okey div {
+        width: 90px;
+        height: 90px;
+        background-color: #A34CF9;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+.account-d .okey div img{
+    position: relative;
+    top: 27px;
+}
+
+.account-d .okey h3{
+    font-size: 25px;
+}
+        
+.account-d h3{
+            font-size: 50px;
+            letter-spacing: 1px;
+            margin-bottom: 50px;
+        }
+        
+.account-d p{
+            font-size: 24px;
+            color: #333333;
+            margin: 20px;
+            
+        }
+        
+.account-d form{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        
+.account-d form button{
+        width: 30%;
+        height: 50px;
+        background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+        border-radius: 10px;
+        border: none;
+        color: white;
+        margin-top: 40px;
+        max-width: 600px;
+        min-width: 400px;
+        transition: 0.5s;
+        }
+        
+
+
+
+/* ALTINCI SAYFA KODLARI*/
+    
+        /* MOBİLE */
+
+.sign .elips {
+    display: flex;
+    height: 15vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: calc(10px + ((100vh - 700px)/100) * 5);
+
+}
+
+.sign .elips p {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: white;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.sign .elips .elipssol p {
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+}
+
+.sign .elips .elipsorta p {
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+}
+
+.sign .elips .elipssag p {
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+}
+
+.sign .elips span {
+    font-size: 13px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.sign .elips .elipssol span {
+    color: #8936F0;
+}
+
+.sign .elips .elipsorta span {
+    color: #8936F0;
+}
+
+.sign .elips .elipssag span {
+    color: #8936F0;
+}
+
+.sign .elips .cizgi-1,
+.sign .elips .cizgi-2 {
+    position: relative;
+    bottom: 10px;
+    margin: 0 15px 0 15px;
+    width: calc((80vw - 200px)/2);
+}
+
+.sign .elips .cizgi-1 {
+    border-top: 1px solid #8231ED;
+}
+
+.sign .elips .cizgi-2 {
+    border-top: 1px solid #8231ED;
+}
+
+/* ORTA ALAN KODLARIMIZ */
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    border-top: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sign .orta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(70vh - 80px);
+    min-height: 400px;
+
+}
+
+.sign .orta h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.sign .orta .input {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    min-width: 200px;
+    width: 80%;
+}
+
+.sign .orta .input span {
+    font-size: 12px;
+}
+
+.sign .orta .input:nth-child(1) {
+/*    margin-top: calc(30px + (((100vh - 600px)/100) * 15));*/
+    margin-top: 10px;
+}
+
+.sign .orta .input input {
+    max-width: 400px;
+    min-width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #4D4D4D;
+    box-sizing: border-box;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.sign .orta form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sign .orta form div {
+    width: 80%;
+    max-width: 400px;
+    min-width: 200px;
+    -ms-align-self: center;
+    align-self: center;
+}
+
+.sign form span {
+    padding-left: 10px;
+    color: #5E5E5E;
+    font-size: 10px;
+}
+
+.sign form button {
+    width: 65%;
+    height: 50px;
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    max-width: 400px;
+    min-width: 200px;
+    transition: 0.5s;
+    align-self: center;
+    margin-top: 10px;
+    font-size: 16px;
+
+}
+
+
+    /* DESKTOP */
+
+
+.sign-d .ust-d {
+            display: flex;
+            height: 20vh;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+.sign-d .ust-d p {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            color: white;
+            line-height: 40px;
+            font-size: 18px;
+        }
+
+.sign-d .ust-d .ustsol p {
+            background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+        }
+
+.sign-d .ust-d .ustorta p {
+            background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+        }
+
+.sign-d .ust-d .ustsag p {
+            background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+        }
+
+.sign-d .ust-d span {
+            font-size: 13px;
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+.sign-d .ust-d .ustsol span {
+            color: #8936F0;
+        }
+
+.sign-d .ust-d .ustorta span {
+            color: #8936F0;
+        }
+
+.sign-d .ust-d .ustsag span {
+            color: #8936F0;
+        }
+
+.sign-d .ust-d .cizgi-1,
+.cizgi-2 {
+            position: relative;
+            bottom: 10px;
+            margin: 0 15px 0 15px;
+            width: calc((80vw - 200px)/2);
+        }
+
+.sign-d .ust-d .cizgi-1 {
+            border-top: 1px solid #8231ED;
+        }
+
+.sign-d .ust-d .cizgi-2 {
+            border-top: 1px solid #8231ED;
+        }
+
+        /* ORTA ALAN KODLARIMIZ */
+        
+.sign-d {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+            border: 1px solid lightgray;
+            border-radius: 25px;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+.sign-d .orta{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 80vh;
+            
+        }
+
+.sign-d .orta h3 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+.sign-d .orta .input {
+            display: flex;
+            flex-direction: column;
+            max-width: 700px;
+            min-width: 500px;
+            width: 40%;
+        }
+
+.sign-d .orta .input span {
+            font-size: 12px;
+        }
+
+.sign-d .orta .input input {
+            height: 50px;
+            border-radius: 10px;
+            border: 1px solid #4D4D4D;
+            box-sizing: border-box;
+            padding-left: 15px;
+            margin-bottom: 10px;
+        }
+
+.sign-d .orta form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        
+.sign-d .orta form div{
+            width: 40%;
+            max-width: 700px;
+            min-width: 500px;
+            -ms-align-self: center;
+            align-self: center;
+        }
+
+.sign-d form span {
+            padding-left: 10px;
+            color: #5E5E5E;
+            font-size: 10px;
+        }
+        
+.sign-d form button {
+        width: 30%;
+        height: 50px;
+        background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+        border-radius: 10px;
+        border: none;
+        color: white;
+        margin-top: 40px;
+        max-width: 600px;
+        min-width: 400px;
+        transition: 0.5s;
+        align-self: center;
+
+        }
+
+/* YEDINCI SAYFA KODLARI */
+
+        /* MOBİLE */
+
+.download {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid lightgray;
+        border-radius: 25px;
+        width: 100vw;
+        height: 100vh;
+        border-top: none;
+    }
+
+.download .orta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 80px);
+    }
+
+.download .orta div {
+        width: 70px;
+        height: 70px;
+        background-color: #A34CF9;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+.download .orta div img {
+        margin-top: 18px;
+    }
+
+.download .orta h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+.download .orta p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+        /* DESKTOP */
+
+.download-d {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    width: 100vw;
+                    height: 100vh;
+                    box-sizing: border-box;
+                    border: 1px solid lightgray;
+                    border-radius: 25px;
+                }
+
+.download-d .ok {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    height: 120px;
+                }
+
+.download-d .img {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    height: 120px;
+                }
+
+.download-d .ok .okey {
+                    position: absolute;
+                    top: 32px;
+                    left: 30px;
+                }
+
+.download-d .img {
+                    height: 445px;
+                }
+
+.download-d h3 {
+                    font-size: 40px;
+                }
+
+.download-d p {
+                    font-size: 24px;
+                }
+
+.download-d #lanet{
+                    color: #1E1D1D;
+                    font-size: 17px;
+                }
+
+/* FOOTER MOBİLE */
+
+.about-m{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.about-m .orta {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 90vw;
+    height: calc(100vh - 230px);
+    align-self: center;
+    
+}
+
+.about-m .orta div{
+    display: flex;
+    
+}
+
+.about-m .orta div h3, .about-m .orta div span{
+    color: #1E1D1D;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.about-m .orta div span{
+    margin-left: 7px;
+}
+
+
+.about-m .orta p{
+    font-size: 13px;
+}
+
+.about-m .footer{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #9E5DF2;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
+}
+
+
+.about-m .footer a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85vw;
+    height: 50px;
+    border-bottom: 1px solid lightgray;
+    color: white;
+}
+.about-m .footer a h3 {
+    font-size: 16px;
+}
+.about-m .footer a span{
+    font-size: 16px;
+}
+
+.about-m .footer a:nth-child(3){
+    border:none;
+}
+
+
+.contactUs{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+}
+
+.contactUs form{
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95vw;
+    height: calc(90h - 160px);
+    max-height: 500px;
+    min-height: 450px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #fff;
+    min-width: 280px;
+    max-width: 350px;
+}
+
+.contactUs form .contactBaslik{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contactUs form .row{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactUs form input{
+    width: 90%;
+    height: 40px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 10px;
+    padding-left: 15px;
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.contactUs input:focus{
+    border: 1px solid #7929EB;
+    box-shadow: 0 0 3px #7929EB;
+    outline-offset: 0px;
+    outline: none;
+}
+
+.contactUs form .row input{
+    width: 46%;
+    height: 40px;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.contactUs form textarea{
+    resize: none;
+    width: calc(90% - 30px);
+    height: 80px;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    outline: none;
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size:13px;
+}
+
+.contactUs form textarea:focus{
+    border: 1px solid #7929EB;
+    box-shadow: 0 0 3px #7929EB;
+    outline-offset: 0px;
+    outline: none;
+}
+
+.contactUs form button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: #7929EB;
+    color: white;
+    margin-top: 10px;
+}
+
+.contactUs form button:hover{
+    background: white;
+    border: 1px solid #7929EB;
+    color: #7929EB;
+}
+
+.contactUs .rights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 40px;
+    background-color: rgb(80, 80, 80);
+}
+.contactUs .rights p{
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+}
+
+.sss{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sss .orta{
+    width: 100vw;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sss .orta .baslik{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    background-color: rgb(250, 250, 250);
+}
+.sss .orta h3{
+    font-size: 25px;
+    color: black;
+}
+
+.sss .orta .question{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 80vw;
+    height: calc((100vh - 180px)/3);
+    border-bottom: 1px solid lightgray;
+    
+}
+.sss .orta .question:nth-child(4){
+    border: none;
+}
+
+.services{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .orta{
+    width: 100vw;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.services .orta .baslik{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    background-color: rgb(250, 250, 250);
+}
+.services .orta h3{
+    font-size: 25px;
+    color: black;
+}
+
+.services .orta .ourservices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 80vw;
+    height: calc((100vh - 180px)/3);
+    border-bottom: 1px solid lightgray;
+    
+}
+.services .orta .ourservices:nth-child(4){
+    border: none;
+}
+/* DESKTOP FOOTER */
+
+.about-d .modal{
+    width: 40vw;
+    height: 40vh;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.about-d a{
+    text-decoration: none;
+}
+.about-d .modal .baslik{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    width: 40vw;
+}
+.about-d .modal .baslik h3{
+    font-size: 25px;
+    color: #000;
+}
+.about-d .modal .baslik span{
+    font-size: 25px;
+    margin-left: 10px;
+    color: #1e1d1d;
+}
+
+.about-d .modal .icerik {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 40vw;
+}
+
+.about-d .modal .info{
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+}
+
+.about-d .modal .info .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    gap: 20px;
+}
+
+.about-d .modal .info .infodiv:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-around;
+    height: 5vh;
+}
+.about-d .modal .info .infodiv:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around; 
+    height: 5vh;
+}
+
+.about-d .modal .info .infodiv p:nth-child(1){
+    font-size: 20px;
+    color: #333;
+    border-bottom: 1px solid #3F758F;
+}
+
+.about-d .modal .info .row .hr{
+    border-left: 1px solid lightgray;
+    margin: 0 5px 0 5px;
+    height: 5vh;
+    width: 0;
+  
+}
+
+.about-d .modal .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    text-align: center;
+}
+
+.about-d .modal .social a{
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+}
+
+.about-d .modal .social a:nth-child(1){
+    color: #082495;
+}
+
+.about-d .modal .social a:nth-child(2){
+    color: #F754A1;
+}
+
+.about-d .modal .social a:nth-child(3){
+    color: #7BB4EF;
+}

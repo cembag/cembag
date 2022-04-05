@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Poppins:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" text="text/css" href="../css/style.css">
+
+    <title>followersreport | Choose</title>
+</head>
+
+<style>
+    @media (max-width: 1023.99px) {
+        .plan {
+            display: flex;
+        }
+
+        .choose {
+            display: none;
+        }
+
+        @media (min-width: 280px) and (max-width: 320px) {
+            .plan .orta .baslik h3 {
+                font-size: 23px;
+            }
+
+            .plan .orta .simge span {
+                font-size: 9px;
+            }
+
+            .plan .orta .option .yazi,
+            .p {
+                padding: 0 5px;
+            }
+
+            .plan .orta .option .yazi h3 {
+                font-size: 20px;
+            }
+
+            .plan .orta .option .yazi h4 {
+                font-size: 13px;
+            }
+
+            .plan .orta .option .p p {
+                font-size: 11px;
+            }
+        }
+
+        @media (min-width: 320px) and (max-width: 375px) {
+            .plan .orta .baslik h3 {
+                font-size: 25px;
+            }
+
+            .plan .orta .simge span {
+                font-size: 10px;
+            }
+
+            .plan .orta .option .yazi,
+            .p {
+                padding: 0 10px;
+            }
+
+            .plan .orta .option .yazi h3 {
+                font-size: 23px;
+            }
+
+            .plan .orta .option .yazi h4 {
+                font-size: 15px;
+            }
+
+            .plan .orta .option .p p {
+                font-size: 12.5px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1023.99px) {
+            .plan .orta .baslik h3 {
+                font-size: 35px;
+            }
+
+            .plan .orta .simge span {
+                font-size: 15px;
+            }
+
+            .plan .orta .option .yazi h4 {
+                font-size: 20px;
+            }
+
+            .plan .orta .option .p p {
+                font-size: 18px;
+            }
+
+        }
+        
+        @media (max-height: 500px) {
+                .plan {
+                    height: 200vh;
+                }
+
+                .plan .elips {
+                    height: 30vh;
+                }
+
+                .plan .orta {
+                    height: 400px;
+                }
+
+                .plan form {
+                   height: calc(170vh - 500px);
+                }
+            }
+
+    }
+
+
+    @media (min-width: 1024px) {
+        .plan {
+            display: none;
+        }
+
+        .choose {
+            display: flex;
+        }
+
+        @media (max-height: 700px) {
+            .choose .ust-d {
+                height: 20vh;
+            }
+
+            .choose .orta .baslik h3 {
+                font-size: 40px;
+            }
+
+        }
+    }
+
+</style>
+
+
+<body>
+
+    <!-- MOBİLE GORUNUMU -->
+
+    <section class="plan" id="plan">
+        <div class="ust">
+            <h3 class="sfprodisplay300"><span class="sfprodisplay700">followers</span>report</h3>
+
+            <div>
+                <a href="#" id="menuHome"><img src="../m-img/Vector%2081.png" alt=""></a>
+                <img class="hr" src="../m-img/Vector%2082.png" alt="">
+            </div>
+        </div>
+        
+        <div class="menu" id="menu" style="visibility: hidden; opacity: 0;">
+        <a href="ourservices.html" class="roboto300">Our Services</a>
+        <a href="about.html" class="roboto300">About Us</a>
+        <a href="contact.html" class="roboto300">Contact</a>
+        <a href="sss.html" class="roboto300">SSS</a>
+        </div>
+
+        <div class="elips">
+            <div class="elipssol">
+                <p class="roboto700">1</p>
+                <span class="roboto400">Step-1</span>
+            </div>
+            <div class="cizgi-1"></div>
+            <div class="elipsorta">
+                <p class="roboto400">2</p>
+                <span class="roboto400">Step-2</span>
+            </div>
+            <div class="cizgi-2"></div>
+            <div class="elipssag">
+                <p class="roboto400">3</p>
+                <span class="roboto400">Step-3</span>
+            </div>
+        </div>
+
+        <div class="orta">
+
+            <div class="baslik">
+                <h3 class="poppins700">Choose the plan<br><span class="poppins300">that's right for you</span></h3>
+            </div>
+
+            <div class="simge"><img src="../m-img/Ellipse%203.png" alt=""><span class="poppins700"><strong>24 hour free trial</strong></span></div>
+            <div class="simge"><img src="../m-img/Ellipse%203.png" alt=""><span class="poppins700"><strong>Change or cancel your plan any time</strong></span></div>
+
+            <div class="option" id="optweek">
+                <div class="yazi">
+                    <h3 class="roboto700">Weekly</h3>
+                    <h4 class="roboto300">TOTAL PRICE</h4>
+                </div>
+                <img src="../m-img/24hour%20free%20trial.png" alt="">
+                <div class="p">
+                    <p class="roboto500">1.99 $ per week</p>
+                    <p class="roboto500"><strong>1.99 $</strong></p>
+                </div>
+            </div>
+
+            <div class="option" id="optyear">
+                <div class="yazi">
+                    <h3 class="roboto700">Annual</h3>
+                    <h4 class="roboto300">TOTAL PRICE</h4>
+                </div>
+                <img src="../m-img/24hour%20free%20trial.png" alt="">
+                <div class="p">
+                    <p class="roboto500">1.99 $ per week</p>
+                    <p class="roboto500"><strong>1.99 $</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <form action="payment(ok).html">
+            <button class="poppins500" id="choose">Next</button>
+        </form>
+
+    </section>
+
+    <!-- DESKTOP GORUNUMU -->
+
+    <section class="choose" id="choose">
+
+        <div class="ust-d">
+            <div class="ustsol">
+                <p class="roboto700">1</p>
+                <span class="roboto400">Step-1</span>
+            </div>
+            <div class="cizgi-1"></div>
+            <div class="ustorta">
+                <p class="roboto700">2</p>
+                <span class="roboto400">Step-2</span>
+            </div>
+            <div class="cizgi-2"></div>
+            <div class="ustsag">
+                <p class="roboto700">3</p>
+                <span class="roboto400">Step-3</span>
+            </div>
+        </div>
+
+        <div class="orta">
+
+            <div class="baslik">
+                <h3 class="poppins700">Choose the plan<br><span class="poppins300">that's right for you</span></h3>
+            </div>
+
+            <div class="simge"><img src="../d-img/Ellipse%203.png" alt=""><span class="poppins700"><strong>24 hour free trial</strong></span></div>
+            <div class="simge"><img src="../d-img/Ellipse%203.png" alt=""><span class="poppins700"><strong>Change or cancel your plan any time</strong></span></div>
+
+                
+            <button class="optweek">
+                <div class="option" id="opt1">
+                    <div class="yazi">
+                        <h3 class="roboto700">Weekly</h3>
+                        <h4 class="roboto300">TOTAL PRICE</h4>
+                    </div>
+                    <img src="../d-img/24hour%20free%20trial.png" alt="">
+                    <div class="p">
+                        <p class="roboto500">1.99 $ per week</p>
+                        <p class="roboto500"><strong>1.99 $</strong></p>
+                    </div>
+                </div>
+            </button>
+
+                   
+               <button class="optyear">
+                <div class="option" id="opt2">
+                    <div class="yazi">
+                        <h3 class="roboto700">Annual</h3>
+                        <h4 class="roboto300">TOTAL PRICE</h4>
+                    </div>
+
+                    <img src="../d-img/24hour%20free%20trial.png" alt="">
+                    <div class="p">
+                        <p class="roboto500">1.99 $ per week</p>
+                        <p class="roboto500"><strong>1.99 $</strong></p>
+                    </div>
+                </div>
+               </button>
+            
+        </div>
+
+        <form action="payment(ok).html">
+            <button class="poppins500">Next</button>
+        </form>
+    </section>
+</body>
+    <script src="../js/java.js"></script>
+</html>
